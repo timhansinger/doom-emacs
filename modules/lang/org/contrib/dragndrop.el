@@ -24,7 +24,7 @@
   (unless org-download-image-dir
     (setq org-download-image-dir org-attach-id-dir))
   (setq org-download-method 'attach
-        org-download-timestamp "_%Y%m%d_%H%M%S"
+        org-download-timestamp "%Y%m%d_%H%M%S_"
         org-download-screenshot-method
         (cond (IS-MAC "screencapture -i %s")
               (IS-LINUX
